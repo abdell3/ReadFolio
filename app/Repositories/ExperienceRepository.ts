@@ -1,4 +1,4 @@
-import Experience, { IExperience } from '../models/Experience';
+import Experience, { IExperience } from '../Models/Experience';
 
 export class ExperienceRepository {
   async findAll(): Promise<IExperience[]> {

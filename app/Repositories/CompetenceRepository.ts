@@ -1,4 +1,4 @@
-import Competence, { ICompetence } from '../models/Competence';
+import Competence, { ICompetence } from '../Models/Competence';
 
 export class CompetenceRepository {
   async findAll(): Promise<ICompetence[]> {

@@ -1,5 +1,5 @@
-import { ICompetence } from '../models/Competence';
-import competenceRepository from '../repositories/CompetenceRepository';
+import { ICompetence } from '../Models/Competence';
+import competenceRepository from '../Repositories/CompetenceRepository';
 
 export class CompetenceService {
   async getCompetences(): Promise<ICompetence[]> {

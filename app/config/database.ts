@@ -4,16 +4,16 @@ import { config } from './env';
 export const connectDatabase = async (): Promise<void> => {
   try {
     await mongoose.connect(config.mongodbUri);
-    console.log('✅ Connected to MongoDB');
+    console.log('Connected to MongoDB');
   } catch (error) {
-    console.error('❌ MongoDB connection error:', error);
+    console.error('MongoDB connection error:', error);
     process.exit(1);
   }
 };
 
 export const disconnectDatabase = async (): Promise<void> => {
   await mongoose.disconnect();
-  console.log('✅ Disconnected from MongoDB');
+  console.log('Disconnected from MongoDB');
 };
 
 export default connectDatabase;

@@ -1,5 +1,5 @@
-import { IExperience } from '../models/Experience';
-import experienceRepository from '../repositories/ExperienceRepository';
+import { IExperience } from '../Models/Experience';
+import experienceRepository from '../Repositories/ExperienceRepository';
 
 export class ExperienceService {
   async getExperiences(): Promise<IExperience[]> {

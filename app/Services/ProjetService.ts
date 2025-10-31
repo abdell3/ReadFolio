@@ -1,5 +1,5 @@
-import { IProjet } from '../models/Projet';
-import projetRepository from '../repositories/ProjetRepository';
+import { IProjet } from '../Models/Projet';
+import projetRepository from '../Repositories/ProjetRepository';
 
 export class ProjetService {
   async getProjets(limit?: number, skip?: number): Promise<IProjet[]> {

@@ -1,4 +1,4 @@
-import Projet, { IProjet } from '../models/Projet';
+import Projet, { IProjet } from '../Models/Projet';
 
 export class ProjetRepository {
   async findAll(limit?: number, skip?: number): Promise<IProjet[]> {

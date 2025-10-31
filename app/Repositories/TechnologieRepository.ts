@@ -1,4 +1,4 @@
-import Technologie, { ITechnologie } from '../models/Technologie';
+import Technologie, { ITechnologie } from '../Models/Technologie';
 
 export class TechnologieRepository {
   async findAll(): Promise<ITechnologie[]> {

@@ -1,5 +1,5 @@
-import { ITechnologie } from '../models/Technologie';
-import technologieRepository from '../repositories/TechnologieRepository';
+import { ITechnologie } from '../Models/Technologie';
+import technologieRepository from '../Repositories/TechnologieRepository';
 
 export class TechnologieService {
   async getTechnologies(): Promise<ITechnologie[]> {

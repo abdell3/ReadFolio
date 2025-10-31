@@ -1,4 +1,4 @@
-import Profil, { IProfil } from '../models/Profil';
+import Profil, { IProfil } from '../Models/Profil';
 
 export class ProfilRepository {
   async find(): Promise<IProfil | null> {
