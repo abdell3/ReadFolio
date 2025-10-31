@@ -1,4 +1,14 @@
 {
+  "name": "codefolio",
+  "version": "1.0.0",
+  "description": "API GraphQL pour portfolio personnel",
+  "main": "index.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only index.ts",
+    "build": "tsc",
+    "seed:admin": "ts-node-dev --transpile-only scripts/seedAdmin.ts"
+  },
   "dependencies": {
     "apollo-server-express": "^3.13.0",
     "bcrypt": "^6.0.0",

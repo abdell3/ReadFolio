@@ -1,0 +1,11 @@
+node_modules
+dist
+.env
+.git
+.gitignore
+README.md
+tsconfig.json
+Dockerfile
+docker-compose.yml
+.dockerignore
+

@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7
+    container_name: codefolio-mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: codefolio
+    volumes:
+      - mongodb_data:/data/db
+
+  app:
+    build: .
+    container_name: codefolio-app
+    restart: unless-stopped
+    ports:
+      - "4000:4000"
+    environment:
+      MONGODB_URI: mongodb://mongodb:27017/codefolio
+      PORT: 4000
+      NODE_ENV: development
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb_data:
+
