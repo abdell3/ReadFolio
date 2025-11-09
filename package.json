@@ -7,7 +7,8 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev --respawn --transpile-only index.ts",
     "build": "tsc",
-    "seed:admin": "ts-node-dev --transpile-only scripts/seedAdmin.ts"
+    "seed:admin": "ts-node-dev --transpile-only scripts/seedAdmin.ts",
+    "seed:demo": "ts-node-dev --transpile-only scripts/seedDemoData.ts"
   },
   "dependencies": {
     "apollo-server-express": "^3.13.0",
@@ -17,6 +18,7 @@
     "express": "^4.21.2",
     "express-rate-limit": "^8.2.0",
     "graphql": "^16.11.0",
+    "graphql-playground-middleware-express": "^1.7.23",
     "helmet": "^8.1.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.2"
