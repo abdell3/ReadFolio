@@ -3,8 +3,13 @@ import Projet, { IProjet } from '../Models/Projet';
 export class ProjetRepository {
   async findAll(limit?: number, skip?: number): Promise<IProjet[]> {
     let query = Projet.find().populate('technologies').sort({ createdAt: -1 });
-    if (skip) query = query.skip(skip);
-    if (limit) query = query.limit(limit);
+    
+    if (skip) {
+      query = query.skip(skip);
+    }
+    if (limit) {
+      query = query.limit(limit);
+    }
     return query;
   }
 

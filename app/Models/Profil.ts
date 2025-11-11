@@ -23,14 +23,27 @@ export interface IProfil extends Document {
 }
 
 const SocialLinkSchema: Schema = new Schema({
-  platform: { type: String, required: true },
-  url: { type: String, required: true },
+  platform: { 
+    type: String, 
+    required: true 
+  },
+  url: { 
+    type: String, 
+    required: true 
+  },
 });
 
 const ContactSchema: Schema = new Schema({
-  email: { type: String, required: true },
-  phone: { type: String },
-  location: { type: String },
+  email: { 
+    type: String, 
+    required: true 
+  },
+  phone: { 
+    type: String 
+  },
+  location: { 
+    type: String 
+  },
 });
 
 const ProfilSchema: Schema = new Schema(
